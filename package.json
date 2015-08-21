@@ -1,0 +1,33 @@
+{
+  "name": "format-spatial-ref",
+  "description": "Format WKID spatial reference variations into a standard structure.",
+  "version": "1.0.0",
+  "author": "Nate Goldman <nate@ngoldman.me>",
+  "bugs": {
+    "url": "https://github.com/koopjs/format-spatial-ref/issues"
+  },
+  "devDependencies": {
+    "standard": "^5.1.0",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/koopjs/format-spatial-ref",
+  "keywords": [
+    "arcgis",
+    "esri",
+    "format",
+    "reference",
+    "spatial",
+    "well-known",
+    "wkid"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koopjs/format-spatial-ref.git"
+  },
+  "scripts": {
+    "test": "standard && tape test/*.js | tap-spec"
+  }
+}

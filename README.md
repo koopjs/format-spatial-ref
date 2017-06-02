@@ -7,8 +7,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/format-spatial-ref.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/format-spatial-ref
-[travis-image]: https://img.shields.io/travis/koopjs/format-spatial-ref.svg?style=flat-square
-[travis-url]: https://travis-ci.org/koopjs/format-spatial-ref
+[travis-image]: https://img.shields.io/travis/GeoXForm/format-spatial-ref.svg?style=flat-square
+[travis-url]: https://travis-ci.org/GeoXForm/format-spatial-ref
 
 ## Install
 

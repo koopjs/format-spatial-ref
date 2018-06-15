@@ -8,8 +8,8 @@ function formatSpatialRef (spatialRef) {
   // Try to parse as in case it is a stringified object
   var parsed = tryJsonParse(spatialRef)
 
-  // If it's not an object but is a number or string-number
-  if (typeof parsed !== 'object' && !isNaN(Number(spatialRef))) return { wkid: Number(parsed) }
+  // If it's not an object but is a number or numeric string
+  if (typeof parsed !== 'object' && !isNaN(Number(parsed))) return { wkid: Number(parsed) }
 
   // Otherwise, return parsed result
   return parsed

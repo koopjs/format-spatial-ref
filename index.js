@@ -5,21 +5,22 @@
  * @return {object} standard spatial reference object
  */
 function formatSpatialRef (spatialRef) {
-  if (typeof spatialRef === 'string') {
-    try {
-      return JSON.parse(spatialRef)
-    } catch (e) {
-      return spatialRef
-    }
-  }
+  // Try to parse as in case it is a stringified object
+  var parsed = tryJsonParse(spatialRef)
 
-  if (typeof spatialRef === 'number') {
-    return {
-      wkid: spatialRef
-    }
-  }
+  // If it's not an object but is a number or numeric string
+  if (typeof parsed !== 'object' && !isNaN(Number(parsed))) return { wkid: Number(parsed) }
 
-  return spatialRef
+  // Otherwise, return parsed result
+  return parsed
+}
+
+function tryJsonParse (json) {
+  try {
+    return JSON.parse(json)
+  } catch (e) {
+    return json
+  }
 }
 
 module.exports = formatSpatialRef

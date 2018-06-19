@@ -1,7 +1,7 @@
 {
   "name": "format-spatial-ref",
   "description": "Format WKID spatial reference variations into a standard structure.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Nate Goldman <nate@ngoldman.me>",
   "bugs": {
     "url": "https://github.com/GeoXForm/format-spatial-ref/issues"
